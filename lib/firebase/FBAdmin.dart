@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:my_first_flutter/src/fb_proyects/Perfil.dart';
 
 import '../fb_proyects/Perfil.dart';
 
