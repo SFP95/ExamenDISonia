@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled/singleton/DataHolder.dart';
 
 class App extends StatelessWidget{
 
