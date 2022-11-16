@@ -21,14 +21,14 @@ class App extends StatelessWidget{
         title: 'MyfirstFlutter',
         initialRoute: '/splashView',
         routes: {
-          '/home': (context) => HomeView(),
-          '/loginPhoneView': (context) => LoginPhoneView(),
-          '/loginView': (context) => LoginView(),
-          '/registerView': (context) => RegisterView(),
-          '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SVLogoWait("assets/images/Logo.png"),
+         // '/home': (context) => HomeView(),
+         // '/loginPhoneView': (context) => LoginPhoneView(),
+         // '/loginView': (context) => LoginView(),
+         // '/registerView': (context) => RegisterView(),
+         // '/onBoarding': (context) => OnBoardingView(),
+        //  '/splashView': (context) => SVLogoWait("assets/images/Logo.png"),
           //'/prueba': (context) => PruebaNewView(),
-          '/chatView': (context) => ChatView(),
+        //  '/chatView': (context) => ChatView(),
         },
       );
     }
@@ -36,14 +36,14 @@ class App extends StatelessWidget{
       materialAppMobile=MaterialApp(
         initialRoute: '/splashView',
         routes: {
-          '/home': (context) => HomeView(),
-          '/loginPhoneView': (context) => LoginPhoneView(),
-          '/loginView': (context) => LoginView(),
-          '/registerView': (context) => RegisterView(),
-          '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SVLogoWait("assets/images/Logo.png"),
+          //'/home': (context) => HomeView(),
+          //'/loginPhoneView': (context) => LoginPhoneView(),
+          //'/loginView': (context) => LoginView(),
+          //'/registerView': (context) => RegisterView(),
+         // '/onBoarding': (context) => OnBoardingView(),
+          //'/splashView': (context) => SVLogoWait("assets/images/Logo.png"),
           //'/prueba': (context) => PruebaNewView(),
-          '/chatView': (context) => ChatView(),
+          //'/chatView': (context) => ChatView(),
         },
       );
     }
