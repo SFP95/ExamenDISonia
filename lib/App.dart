@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
+import 'package:untitled/views/SplashView.dart';
 
 class App extends StatelessWidget{
 
@@ -28,7 +29,7 @@ class App extends StatelessWidget{
          // '/loginView': (context) => LoginView(),
          // '/registerView': (context) => RegisterView(),
          // '/onBoarding': (context) => OnBoardingView(),
-        //  '/splashView': (context) => SVLogoWait("assets/images/Logo.png"),
+          '/splashView': (context) => SplashView("assets/images/LogoEx.png"),
           //'/prueba': (context) => PruebaNewView(),
         //  '/chatView': (context) => ChatView(),
         },
@@ -43,7 +44,7 @@ class App extends StatelessWidget{
           //'/loginView': (context) => LoginView(),
           //'/registerView': (context) => RegisterView(),
          // '/onBoarding': (context) => OnBoardingView(),
-          //'/splashView': (context) => SVLogoWait("assets/images/Logo.png"),
+          '/splashView': (context) => SplashView("assets/images/LogoEx.png"),
           //'/prueba': (context) => PruebaNewView(),
           //'/chatView': (context) => ChatView(),
         },
