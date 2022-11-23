@@ -56,7 +56,7 @@ class _SplashView extends State<SplashView>{
   Widget build(BuildContext context) {
     DataHolder().platformAdmin.initDisplayData(context);
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
