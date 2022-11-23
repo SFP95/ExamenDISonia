@@ -40,12 +40,12 @@ class LoginView extends StatelessWidget{
       appBar: AppBar(
         backgroundColor: Colors.grey,
         elevation: 0,
-        title: Text('Login',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 30,
-        ),
-        ),
+        // title: Text('Login',
+        // style: TextStyle(
+        //   color: Colors.redAccent[100],
+        //   fontSize: 30,
+        // ),
+        // ),
       ),
       body:  Center(
         child: Container(

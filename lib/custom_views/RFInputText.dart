@@ -25,10 +25,9 @@ class RFInputText extends StatelessWidget{
       enableSuggestions: !blIsPsswd,
       autocorrect: !blIsPsswd,
       decoration: InputDecoration(
-
         icon: Image(
-            image: AssetImage('assets/images/dragon.png')
-            ,height: 40,
+            image: AssetImage('assets/images/dragon.png'),
+            height: 40,
         ),
         labelText:  titulo ,
         labelStyle: TextStyle(
