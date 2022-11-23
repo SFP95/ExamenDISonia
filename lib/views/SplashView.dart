@@ -56,7 +56,7 @@ class _SplashView extends State<SplashView>{
   Widget build(BuildContext context) {
     DataHolder().platformAdmin.initDisplayData(context);
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -66,14 +66,14 @@ class _SplashView extends State<SplashView>{
             const Text("C A R G A N D O ...",
               style: TextStyle(
                   fontSize: 20,
-                  color: Colors.white),),
+                  color: Colors.grey),),
             const SizedBox(height: 30),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 70),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: const LinearProgressIndicator(
-                  color: Colors.white,
+                  color: Colors.grey,
                   minHeight: 10,
                   backgroundColor: Colors.white38,
 

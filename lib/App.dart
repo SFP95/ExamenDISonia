@@ -26,7 +26,7 @@ class App extends StatelessWidget{
           '/loginView': (context) => LoginView(),
          // '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SplashView("assets/images/Nia_.png"),
+          '/splashView': (context) => SplashView("assets/images/dragon.png"),
         //  '/chatView': (context) => ChatView(),
         },
       );
@@ -38,7 +38,7 @@ class App extends StatelessWidget{
           '/loginView': (context) => LoginView(),
           //'/registerView': (context) => RegisterView(),
          '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SplashView("assets/images/Nia_.png"),
+          '/splashView': (context) => SplashView("assets/images/dragon.png"),
           //'/chatView': (context) => ChatView(),
         },
       );
