@@ -33,7 +33,8 @@ class RFInputText extends StatelessWidget{
         ),
         helperText: ayuda ,
         suffixIcon: Icon(
-          Icons.abc_rounded,
+          Icons.cloud_outlined,
+          color: Colors.blueAccent[100],
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
