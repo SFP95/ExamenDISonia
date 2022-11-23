@@ -23,7 +23,7 @@ class RFInputText extends StatelessWidget{
     return TextFormField(
       obscureText: blIsPsswd,
       controller: myController,
-      cursorColor: Colors.purpleAccent,
+      cursorColor: Colors.white,
       maxLength: 80,
       enableSuggestions: !blIsPsswd,
       autocorrect: !blIsPsswd,

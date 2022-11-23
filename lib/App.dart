@@ -22,8 +22,8 @@ class App extends StatelessWidget{
             backgroundColor: Colors.purple[100],
             fontFamily:'Reach Story'
         ),
-        title: 'MyfirstFlutter',
-        initialRoute: '/splashView',
+        title: 'Examen DI Sonia',
+        initialRoute: '/loginView',
         routes: {
          // '/home': (context) => HomeView(),
          // '/loginPhoneView': (context) => LoginPhoneView(),
@@ -38,7 +38,7 @@ class App extends StatelessWidget{
     }
     else{
       materialAppMobile=MaterialApp(
-        initialRoute: '/splashView',
+        initialRoute: '/loginView',
         routes: {
           //'/home': (context) => HomeView(),
           //'/loginPhoneView': (context) => LoginPhoneView(),
