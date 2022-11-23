@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
@@ -14,16 +16,40 @@ class SplashView extends StatefulWidget{
 
 class _SplashView extends State<SplashView>{
 
+  Future<bool> checkExistingProfile() async{
+    String? idUser=FirebaseAuth.instance.currentUser?.uid;
+    FirebaseFirestore db=FirebaseFirestore.instance;
+    final docRef=db.collection("perfiles").doc(idUser);
+    DocumentSnapshot docsnap=await docRef.get();
+    return docsnap.exists;
+  }
+
   @override
   void initState() {
     super.initState();
-    // userloged();
+    userloged();
   }
-  // void userloged() async{
-  //   await Future.delayed(Duration(seconds: 3));
-  //
-  //
-  // }
+  void userloged() async{
+    await Future.delayed(Duration(seconds: 3));
+
+    if(DataHolder().perfil.uid==null){
+      setState(() {
+        Navigator.of(context).popAndPushNamed('/loginView');
+      });
+    }else{
+      bool existeUS=await checkExistingProfile();
+      if(existeUS){
+        setState(() {
+          Navigator.of(context).popAndPushNamed('/home');
+        });
+      }else{
+        setState(() {
+          Navigator.of(context).popAndPushNamed('/register');
+        });
+      }
+    }
+
+  }
 
 
   @override
