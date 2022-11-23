@@ -17,7 +17,7 @@ class _SplashView extends State<SplashView>{
   @override
   void initState() {
     super.initState();
-   // userloged();
+    // userloged();
   }
   // void userloged() async{
   //   await Future.delayed(Duration(seconds: 3));
@@ -37,16 +37,26 @@ class _SplashView extends State<SplashView>{
           children: [
             Image(image: AssetImage(widget.imgLogo)),
             const SizedBox(height:30),
-            const Text("C A R G A N D O ..."),
+            const Text("C A R G A N D O ...",
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.deepPurple),),
             const SizedBox(height: 30),
-            const LinearProgressIndicator(
-              semanticsLabel: 'Linear progress indicator',
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 70),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: const LinearProgressIndicator(
+                  color: Colors.deepPurple,
+                  minHeight: 10,
+                  backgroundColor: Colors.white,
+
+                ),
+              ),
             )
           ],
         ),
       ),
     );
   }
-
-
 }
