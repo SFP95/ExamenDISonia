@@ -19,18 +19,14 @@ class App extends StatelessWidget{
         DataHolder().platformAdmin.isIOSPlatform()){
       //print("ENTRO EN ANDROID O IOS");
       materialAppMobile=MaterialApp(
-        theme: ThemeData(
-            backgroundColor: Colors.purple[100],
-            fontFamily:'Reach Story'
-        ),
         title: 'Examen DI Sonia',
-        initialRoute: '/onBoarding',
+        initialRoute: '/splashView',
         routes: {
          // '/home': (context) => HomeView(),
           '/loginView': (context) => LoginView(),
          // '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SplashView("assets/images/LogoEx.png"),
+          '/splashView': (context) => SplashView("assets/images/Nia_.png"),
         //  '/chatView': (context) => ChatView(),
         },
       );
@@ -42,7 +38,7 @@ class App extends StatelessWidget{
           '/loginView': (context) => LoginView(),
           //'/registerView': (context) => RegisterView(),
          '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SplashView("assets/images/LogoEx.png"),
+          '/splashView': (context) => SplashView("assets/images/Nia_.png"),
           //'/chatView': (context) => ChatView(),
         },
       );

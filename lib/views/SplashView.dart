@@ -44,7 +44,7 @@ class _SplashView extends State<SplashView>{
         });
       }else{
         setState(() {
-          Navigator.of(context).popAndPushNamed('/register');
+          Navigator.of(context).popAndPushNamed('/loginView');
         });
       }
     }
@@ -66,16 +66,16 @@ class _SplashView extends State<SplashView>{
             const Text("C A R G A N D O ...",
               style: TextStyle(
                   fontSize: 20,
-                  color: Colors.deepPurple),),
+                  color: Colors.white),),
             const SizedBox(height: 30),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 70),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: const LinearProgressIndicator(
-                  color: Colors.deepPurple,
+                  color: Colors.white,
                   minHeight: 10,
-                  backgroundColor: Colors.white,
+                  backgroundColor: Colors.white38,
 
                 ),
               ),
