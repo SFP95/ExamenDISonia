@@ -49,7 +49,7 @@ class LoginView extends StatelessWidget{
       ),
       body:  Center(
         child: Container(
-          margin: const EdgeInsets.only(top: 10, bottom: 25,right: 10,left: 10),
+          margin: const EdgeInsets.only(top: 110, bottom: 150,right: 15,left: 15),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
