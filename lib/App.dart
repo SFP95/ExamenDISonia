@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
 import 'package:untitled/views/LoginView.dart';
+import 'package:untitled/views/OnBoardingView.dart';
 import 'package:untitled/views/SplashView.dart';
 
 class App extends StatelessWidget{
@@ -23,30 +24,25 @@ class App extends StatelessWidget{
             fontFamily:'Reach Story'
         ),
         title: 'Examen DI Sonia',
-        initialRoute: '/loginView',
+        initialRoute: '/onBoarding',
         routes: {
          // '/home': (context) => HomeView(),
-         // '/loginPhoneView': (context) => LoginPhoneView(),
           '/loginView': (context) => LoginView(),
          // '/registerView': (context) => RegisterView(),
-         // '/onBoarding': (context) => OnBoardingView(),
+          '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/LogoEx.png"),
-          //'/prueba': (context) => PruebaNewView(),
         //  '/chatView': (context) => ChatView(),
         },
       );
     }
     else{
       materialAppMobile=MaterialApp(
-        initialRoute: '/loginView',
+        initialRoute: '/onBoarding',
         routes: {
-          //'/home': (context) => HomeView(),
-          //'/loginPhoneView': (context) => LoginPhoneView(),
           '/loginView': (context) => LoginView(),
           //'/registerView': (context) => RegisterView(),
-         // '/onBoarding': (context) => OnBoardingView(),
+         '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/LogoEx.png"),
-          //'/prueba': (context) => PruebaNewView(),
           //'/chatView': (context) => ChatView(),
         },
       );

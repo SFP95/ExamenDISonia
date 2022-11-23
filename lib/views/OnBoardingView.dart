@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/src/custom_views/RFInputText.dart';
+import '../custom_views/RFInputText.dart';
 import '../fb_proyects/Perfil.dart';
 import '../singleton/DataHolder.dart';
 
@@ -50,12 +49,14 @@ class OnBoardingView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    //inputEdad.setInitialValue("VALOR INICIAL NOMBRE");
 
-    TextField txtMensaje=TextField(controller: myController, readOnly: true, style: TextStyle(color: Colors.red,fontSize: 16),);
+    TextField txtMensaje=TextField(controller: myController, readOnly: true, style: TextStyle(
+        color: Colors.red[400],
+        fontSize: 16),
+    );
 
     return Scaffold(
-      backgroundColor: Colors.purple[50],
+      backgroundColor: Colors.grey,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -75,7 +76,7 @@ class OnBoardingView extends StatelessWidget{
 
                   child: Text("Aceptar"),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.purple[900],
+                    backgroundColor: Colors.blueAccent[100],
                   ),
                 ),
                 ElevatedButton(
@@ -86,7 +87,7 @@ class OnBoardingView extends StatelessWidget{
 
                   child: Text("Cancelar"),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.purple[900],
+                    backgroundColor: Colors.blueAccent[100],
                   ),
                 ),
               ],
