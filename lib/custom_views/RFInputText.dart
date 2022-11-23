@@ -9,10 +9,6 @@ class RFInputText extends StatelessWidget{
 
   RFInputText({Key? key,  this.titulo="",  this.blIsPsswd=false,  this.ayuda=""}): super (key:key);
 
-  /*void setInitialValue(String sInitialValue){
-    myController.text=sInitialValue;
-  }*/
-
 
   String getText(){
     return myController.text;
@@ -28,17 +24,20 @@ class RFInputText extends StatelessWidget{
       enableSuggestions: !blIsPsswd,
       autocorrect: !blIsPsswd,
       decoration: InputDecoration(
-        icon: Icon(Icons.account_circle_outlined),
-        labelText:  titulo , //EMAIL el this.titulo no funciona
+        icon: Icon(Icons.star,
+          color: Colors.white,
+        size: 40),
+        labelText:  titulo ,
         labelStyle: TextStyle(
-          color: Color(0xFF6200EE),
+          color: Colors.blueAccent[200],
         ),
-        helperText: ayuda , //Ej: MrPotato@micorreo.com el this.ayuda no funciona
+        helperText: ayuda ,
         suffixIcon: Icon(
-          Icons.abc,
+          Icons.abc_rounded,
         ),
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Color(0xFF6200EE)),
+          borderSide: BorderSide(
+              color: Colors.white),
         ),
       ),
     );
