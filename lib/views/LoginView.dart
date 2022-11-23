@@ -58,9 +58,10 @@ class LoginView extends StatelessWidget{
             ),
             gradient: LinearGradient(
               colors: [
-                Colors.white30,
-                Colors.white38,
-                Colors.white30,
+                Colors.white70,
+                Colors.white54,
+                Colors.white54,
+                Colors.white70,
               ]
             )
           ),
@@ -74,15 +75,15 @@ class LoginView extends StatelessWidget{
                 children: [
                   ElevatedButton(
                     onPressed: ()async{
-                      print("FUNCIONO  --  "+inputUser.getText() +" -- "+inputPsswd.getText());
+                      //print("FUNCIONO  --  "+inputUser.getText() +" -- "+inputPsswd.getText());
 
                       try {
                         final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
                           email: inputUser.getText(),
                           password: inputPsswd.getText(),
                         );
-                        print(' -- ESTOY DENTRO ---- Bienvenido '+inputUser.getText()+ "---"+ inputPsswd.getText());
-                        Navigator.of(context).popAndPushNamed('/home');
+                      //  print(' -- ESTOY DENTRO ---- Bienvenido '+inputUser.getText()+ "---"+ inputPsswd.getText());
+                        Navigator.of(context).popAndPushNamed('/onBoarding');
 
                       } on FirebaseAuthException catch (e) {
                         if (e.code == 'weak-password') {
@@ -107,7 +108,7 @@ class LoginView extends StatelessWidget{
                   ),
                   ElevatedButton(
                       onPressed: (){
-                        Navigator.of(context).popAndPushNamed('/registerView');
+                        Navigator.of(context).popAndPushNamed('/onBoarding');
                       },
                       // Respond to button press
 

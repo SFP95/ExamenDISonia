@@ -58,40 +58,57 @@ class OnBoardingView extends StatelessWidget{
     return Scaffold(
       backgroundColor: Colors.grey,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            inputNombre,
-            inputPais,
-            inputCiudad,
-            inputEdad,
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed:(){
-                    accepPressed(inputNombre.getText(),inputPais.getText(),inputCiudad.getText(),int.parse(inputEdad.getText()),context);
-                    Navigator.of(context).popAndPushNamed('/home');
-                  },
+        child: Container(
+          margin: const EdgeInsets.only(top: 100, bottom: 100,right: 15,left: 15),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                width: 2,
+                color: Colors.white,
+              ),
+              gradient: LinearGradient(
+                  colors: [
+                    Colors.white70,
+                    Colors.white54,
+                    Colors.white54,
+                    Colors.white70,
+                  ]
+              )
+          ),          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              inputNombre,
+              inputPais,
+              inputCiudad,
+              inputEdad,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed:(){
+                      accepPressed(inputNombre.getText(),inputPais.getText(),inputCiudad.getText(),int.parse(inputEdad.getText()),context);
+                      Navigator.of(context).popAndPushNamed('/home');
+                    },
 
-                  child: Text("Aceptar"),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueAccent[100],
+                    child: Text("Aceptar"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blueAccent[100],
+                    ),
                   ),
-                ),
-                ElevatedButton(
-                  onPressed: (){
-                    Navigator.of(context).popAndPushNamed('/loginView');
-                  },
-                  // Respond to button press
+                  ElevatedButton(
+                    onPressed: (){
+                      Navigator.of(context).popAndPushNamed('/loginView');
+                    },
+                    // Respond to button press
 
-                  child: Text("Cancelar"),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueAccent[100],
+                    child: Text("Cancelar"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blueAccent[100],
+                    ),
                   ),
-                ),
-              ],
-            )],
+                ],
+              )],
+          ),
         ),
       ),
 

@@ -6,8 +6,9 @@ class RFInputText extends StatelessWidget{
   final String ayuda;
   final bool blIsPsswd;
   final TextEditingController myController = TextEditingController();
+  final String img;
 
-  RFInputText({Key? key,  this.titulo="",  this.blIsPsswd=false,  this.ayuda=""}): super (key:key);
+  RFInputText({Key? key, this.img="" , this.titulo="",  this.blIsPsswd=false,  this.ayuda=""}): super (key:key);
 
 
   String getText(){
@@ -24,12 +25,14 @@ class RFInputText extends StatelessWidget{
       enableSuggestions: !blIsPsswd,
       autocorrect: !blIsPsswd,
       decoration: InputDecoration(
-        icon: Icon(Icons.star,
-          color: Colors.white,
-        size: 40),
+
+        icon: Image(
+            image: AssetImage('assets/images/dragon.png')
+            ,height: 40,
+        ),
         labelText:  titulo ,
         labelStyle: TextStyle(
-          color: Colors.blueAccent[200],
+          color: Colors.blueAccent[200]
         ),
         helperText: ayuda ,
         suffixIcon: Icon(
