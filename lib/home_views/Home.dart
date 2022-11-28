@@ -80,6 +80,23 @@ class _HomeView extends State<HomeView> {
           title: Text('HOME'),
         ),
         body: Center(
+          child: Container(
+            margin: const EdgeInsets.only(top: 50, bottom: 80,right: 15,left: 15),
+            decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+            width: 2,
+            color: Colors.white,
+          ),
+            gradient: LinearGradient(
+            colors: [
+              Colors.white70,
+              Colors.white54,
+              Colors.white54,
+              Colors.white70,
+            ]
+        )
+        ),
           child:
           GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -94,6 +111,7 @@ class _HomeView extends State<HomeView> {
                   index: index,);
               }
           ),
+        )
         )
     );
   }
