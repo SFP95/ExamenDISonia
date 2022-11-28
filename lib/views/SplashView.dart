@@ -43,8 +43,9 @@ class _SplashView extends State<SplashView>{
           Navigator.of(context).popAndPushNamed('/home');
         });
       }else{
+
         setState(() {
-          Navigator.of(context).popAndPushNamed('/loginView');
+          Navigator.of(context).popAndPushNamed('/registerView');
         });
       }
     }

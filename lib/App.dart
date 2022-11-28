@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
 import 'package:untitled/views/LoginView.dart';
 import 'package:untitled/views/OnBoardingView.dart';
+import 'package:untitled/views/RegisterView.dart';
 import 'package:untitled/views/SplashView.dart';
 
 class App extends StatelessWidget{
@@ -20,11 +21,11 @@ class App extends StatelessWidget{
       //print("ENTRO EN ANDROID O IOS");
       materialAppMobile=MaterialApp(
         title: 'Examen DI Sonia',
-        initialRoute: '/splashView',
+        initialRoute: '/registerView',
         routes: {
          // '/home': (context) => HomeView(),
           '/loginView': (context) => LoginView(),
-         // '/registerView': (context) => RegisterView(),
+          '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/dragon.png"),
         //  '/chatView': (context) => ChatView(),
@@ -36,8 +37,8 @@ class App extends StatelessWidget{
         initialRoute: '/onBoarding',
         routes: {
           '/loginView': (context) => LoginView(),
-          //'/registerView': (context) => RegisterView(),
-         '/onBoarding': (context) => OnBoardingView(),
+          '/registerView': (context) => RegisterView(),
+          '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/dragon.png"),
           //'/chatView': (context) => ChatView(),
         },

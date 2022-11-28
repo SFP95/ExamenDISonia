@@ -47,30 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCS4pmWibuu2Fbi-yKDAekJm7VGwRa1I8I',
-    appId: '1:940057841077:web:3f215aa97cc7b17ad89dfc',
-    messagingSenderId: '940057841077',
-    projectId: 'chat-flutter-2d488',
-    authDomain: 'chat-flutter-2d488.firebaseapp.com',
-    storageBucket: 'chat-flutter-2d488.appspot.com',
-    measurementId: 'G-FPL92H8SF2',
+    apiKey: 'AIzaSyBOG9Kw40GeJpOO6_qxKyWjoHKlklO7wOU',
+    appId: '1:510780556481:web:6f252fb6981d196ffa0040',
+    messagingSenderId: '510780556481',
+    projectId: 'examendisonia',
+    authDomain: 'examendisonia.firebaseapp.com',
+    storageBucket: 'examendisonia.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBsrf15eBgP7cKApKBMLP1d7YNYKOy9Tio',
-    appId: '1:940057841077:android:6fa1b43cbe9280add89dfc',
-    messagingSenderId: '940057841077',
-    projectId: 'chat-flutter-2d488',
-    storageBucket: 'chat-flutter-2d488.appspot.com',
+    apiKey: 'AIzaSyC-b_jgZoVRwp7PfFN_8DhJdGKg7vco8zs',
+    appId: '1:510780556481:android:f24144f81802f1e8fa0040',
+    messagingSenderId: '510780556481',
+    projectId: 'examendisonia',
+    storageBucket: 'examendisonia.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDdmTmGitEZ43i_0GF9zMNoLm5DzW-TayU',
-    appId: '1:940057841077:ios:934eedc313f1b7ead89dfc',
-    messagingSenderId: '940057841077',
-    projectId: 'chat-flutter-2d488',
-    storageBucket: 'chat-flutter-2d488.appspot.com',
-    iosClientId: '940057841077-ii06i1otl1fhofa44am72ftgek63u39j.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBZTGpwQ0yeWgux4CGPoMNa9F1usLqPl0A',
+    appId: '1:510780556481:ios:ef9ff355f87f7420fa0040',
+    messagingSenderId: '510780556481',
+    projectId: 'examendisonia',
+    storageBucket: 'examendisonia.appspot.com',
+    iosClientId: '510780556481-k741c0f7e65lsp0lo7krm8lpqc6qkakc.apps.googleusercontent.com',
     iosBundleId: 'com.example.untitled',
   );
 }
