@@ -40,12 +40,6 @@ class LoginView extends StatelessWidget{
       appBar: AppBar(
         backgroundColor: Colors.grey,
         elevation: 0,
-        // title: Text('Login',
-        // style: TextStyle(
-        //   color: Colors.redAccent[100],
-        //   fontSize: 30,
-        // ),
-        // ),
       ),
       body:  Center(
         child: Container(
@@ -108,7 +102,7 @@ class LoginView extends StatelessWidget{
                   ),
                   ElevatedButton(
                       onPressed: (){
-                        Navigator.of(context).popAndPushNamed('/registerView');
+                        Navigator.of(context).popAndPushNamed('/home');
                       },
                       // Respond to button press
 

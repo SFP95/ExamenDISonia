@@ -3,9 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
 import 'package:untitled/views/LoginView.dart';
-import 'package:untitled/views/OnBoardingView.dart';
+import 'package:untitled/home_views/OnBoardingView.dart';
 import 'package:untitled/views/RegisterView.dart';
 import 'package:untitled/views/SplashView.dart';
+
+import 'home_views/Home.dart';
 
 class App extends StatelessWidget{
 
@@ -21,9 +23,9 @@ class App extends StatelessWidget{
       //print("ENTRO EN ANDROID O IOS");
       materialAppMobile=MaterialApp(
         title: 'Examen DI Sonia',
-        initialRoute: '/registerView',
+        initialRoute: '/home',
         routes: {
-         // '/home': (context) => HomeView(),
+          '/home': (context) => HomeView(),
           '/loginView': (context) => LoginView(),
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
@@ -36,6 +38,7 @@ class App extends StatelessWidget{
       materialAppMobile=MaterialApp(
         initialRoute: '/onBoarding',
         routes: {
+          '/home': (context) => HomeView(),
           '/loginView': (context) => LoginView(),
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
