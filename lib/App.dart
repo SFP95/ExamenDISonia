@@ -42,7 +42,7 @@ class App extends StatelessWidget{
           '/loginView': (context) => LoginView(),
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
-          '/splashView': (context) => SplashView("assets/images/dragon.png"),
+          '/splashView': (context) => SplashView("assets/images/Nia_.png"),
           //'/chatView': (context) => ChatView(),
         },
       );
