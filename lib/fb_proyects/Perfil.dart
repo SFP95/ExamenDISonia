@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../firebase/FbAdmin.dart';
 
 class Perfil { // modificar en base a lo que tenemos en la base de datos del firebase
 

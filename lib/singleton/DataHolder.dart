@@ -2,7 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import '../fb_proyects/Perfil.dart';
 import '../fb_proyects/Room.dart';
-import '../firebase/FbAdmin.dart';
+import '../firebase/FBAdmin.dart';
 import '../platform/PlatformAdmin.dart';
 
 class DataHolder {
