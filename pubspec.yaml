@@ -83,7 +83,7 @@ flutter:
   fonts:
     - family: Reach Story
       fonts:
-        - fonts/Reach_Story.ttf
+        - asset: fonts/Reach_Story.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
