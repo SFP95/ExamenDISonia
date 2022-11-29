@@ -24,6 +24,9 @@ class RoomCard extends StatelessWidget{
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children:[
+                Center(
+                  child: Text('CARTA'),
+                ),
                 Image.network(imgURL),
                 Text(name),
               ]

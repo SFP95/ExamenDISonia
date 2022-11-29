@@ -97,6 +97,7 @@ class _HomeView extends State<HomeView> {
             ]
         )
         ),
+
           child:
           GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -106,7 +107,7 @@ class _HomeView extends State<HomeView> {
               itemBuilder: (BuildContext context, int index) {
                 return RoomCard(
                   imgURL:chatRooms[index].image!,
-                  name :chatRooms[index].name!,
+                  name : chatRooms[index].name!,
                   onShorClick: listItemShortClicked,
                   index: index,);
               }

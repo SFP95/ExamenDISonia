@@ -23,7 +23,7 @@ class LoginView extends StatelessWidget{
         password: inputPsswd.getText(),
       );
       print("ESTOY LOGEADO");
-      Navigator.of(context).popAndPushNamed('/onBoarding');
+      Navigator.of(context).popAndPushNamed('/home');
     }on FirebaseAuthException catch (e){
       if(e.code=='user-not-found'){
         print('No user found for that email');
@@ -69,15 +69,15 @@ class LoginView extends StatelessWidget{
                 children: [
                   ElevatedButton(
                     onPressed: ()async{
-                      //print("FUNCIONO  --  "+inputUser.getText() +" -- "+inputPsswd.getText());
+                      print("FUNCIONO  --  "+inputUser.getText() +" -- "+inputPsswd.getText());
 
                       try {
                         final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
                           email: inputUser.getText(),
                           password: inputPsswd.getText(),
                         );
-                      //  print(' -- ESTOY DENTRO ---- Bienvenido '+inputUser.getText()+ "---"+ inputPsswd.getText());
-                        Navigator.of(context).popAndPushNamed('/onBoarding');
+                        print(' -- ESTOY DENTRO ---- Bienvenido '+inputUser.getText()+ "---"+ inputPsswd.getText());
+                        Navigator.of(context).popAndPushNamed('/home');
 
                       } on FirebaseAuthException catch (e) {
                         if (e.code == 'weak-password') {
