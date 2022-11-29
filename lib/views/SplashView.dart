@@ -15,9 +15,9 @@ class SplashView extends StatefulWidget{
 }
 
 class _SplashView extends State<SplashView>{
-
+  //DataHolder().perfil.uid  FirebaseAuth.instance.currentUser?.uid
   Future<bool> checkExistingProfile() async{
-    String? idUser=FirebaseAuth.instance.currentUser?.uid;
+    String? idUser=DataHolder().perfil.uid;
     FirebaseFirestore db=FirebaseFirestore.instance;
     final docRef=db.collection("perfiles").doc(idUser);
     DocumentSnapshot docsnap=await docRef.get();
@@ -32,21 +32,14 @@ class _SplashView extends State<SplashView>{
   void userloged() async{
     await Future.delayed(Duration(seconds: 3));
 
-    if(DataHolder().perfil.uid==null){
-      setState(() {
-        Navigator.of(context).popAndPushNamed('/loginView');
-      });
+    if(DataHolder().perfil.uid!=null){
+      Navigator.of(context).popAndPushNamed('/loginView');
     }else{
       bool existeUS=await checkExistingProfile();
       if(existeUS){
-        setState(() {
-          Navigator.of(context).popAndPushNamed('/home');
-        });
+        Navigator.of(context).popAndPushNamed('/home');
       }else{
-
-        setState(() {
-          Navigator.of(context).popAndPushNamed('/registerView');
-        });
+        Navigator.of(context).popAndPushNamed('/registerView');
       }
     }
 
