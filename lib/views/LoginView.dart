@@ -15,7 +15,7 @@ class LoginView extends StatelessWidget{
     titulo: 'PASSWORD:',
     ayuda: 'No menos de 8 caracteres',
     blIsPsswd: true,);
-
+/*
   void LogPressed(RFInputText inputUser, RFInputText inputPsswd, BuildContext context) async{
     try{
       final credential= await FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -31,7 +31,7 @@ class LoginView extends StatelessWidget{
         print('Wrong password provided for that user');
       }
     }
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
