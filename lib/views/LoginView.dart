@@ -87,7 +87,7 @@ class LoginView extends StatelessWidget{
                         } else if (e.code == 'user-not-found') {
                           print("---- No encuentro al usuario ----- ");
                         } else if (e.code == 'wrong-password') {
-                          print("---- La contraseña no cohincide ----- ");
+                          print("---- La contraseña no coincide ----- ");
                         }
                         print(e.code); //Add this line to see other firebase exceptions.
                       } catch (e) {

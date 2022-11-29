@@ -2,6 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../fb_proyects/Perfil.dart';
 import '../fb_proyects/Room.dart';
 import '../gridItem/RoomCard.dart';
 import '../singleton/DataHolder.dart';
@@ -27,30 +28,25 @@ class _HomeView extends State<HomeView> {
     // TODO: implement initState
     super.initState();
 
-    //getProfile();
-    actualizarLista();
+    getPerfiles();
+    getRooms();
   }
 
+  void getPerfiles() async {
+    final ref = db.collection("perfiles").doc(FirebaseAuth.instance.currentUser?.uid).withConverter(
+      fromFirestore: Perfil.fromFirestore,
+      toFirestore: (Perfil perfil, _) => perfil.toFirestore(),
+    );
+    final docSnap = await ref.get();
+    final perfil = docSnap.data();
+    if (perfil != null) {
+      print("---------->"+perfil.toString());
+    } else {
+      print("No such document.");
+    }
 
-  void getRoomList() async{
-    // String Query= SELECT * FROM ROOMS WHERE members>50;
-    final docRef=db.collection('rooms').where('members', isGreaterThan:50).orderBy('members',descending: true)
-        .withConverter(
-        fromFirestore: Room.fromFirestore,
-        toFirestore: (Room room, _) => room.toFirestore());
-
-    //stmt.exexuteQuery(Query);
-    final docSnap= await docRef.get();
-
-    setState(() {
-      for(int i=0;i<docSnap.docs.length;i++){
-        chatRooms.add(docSnap.docs[i].data());
-      }
-    });
   }
-
-
-  void actualizarLista()async{
+  void getRooms()async{
     final docRef = db.collection("rooms").withConverter(fromFirestore: Room.fromFirestore,
         toFirestore: (Room room, _) => room.toFirestore());
 
@@ -66,6 +62,7 @@ class _HomeView extends State<HomeView> {
   void listItemShortClicked(int index){
     print("DEBUG: "+index.toString());
     print("DEBUG: "+chatRooms[index].name!);
+    print("PRINT: "+chatRooms.length.toString());
     DataHolder().selectedChatRoom=chatRooms[index];
     Navigator.of(context).pushNamed('/chatView');
   }
@@ -101,7 +98,7 @@ class _HomeView extends State<HomeView> {
           child:
           GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
+                crossAxisCount: 2,
               ),
               itemCount: chatRooms.length,
               itemBuilder: (BuildContext context, int index) {
@@ -116,4 +113,6 @@ class _HomeView extends State<HomeView> {
         )
     );
   }
+
+
 }
