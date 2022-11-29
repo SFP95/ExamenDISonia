@@ -25,7 +25,7 @@ class RoomCard extends StatelessWidget{
               mainAxisAlignment: MainAxisAlignment.center,
               children:[
                 Image.network(imgURL,height: 120,color: Colors.white),
-                Text(name,style: TextStyle(color:Colors.white,fontSize: 25,fontFamily: 'Reach_Story.ttf')),
+                Text(name,style: TextStyle(color:Colors.white,fontSize: 25)),
               ]
           ),
         )
