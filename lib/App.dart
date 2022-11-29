@@ -23,7 +23,7 @@ class App extends StatelessWidget{
       //print("ENTRO EN ANDROID O IOS");
       materialAppMobile=MaterialApp(
         title: 'Examen DI Sonia',
-        initialRoute: '/splashView',
+        initialRoute: '/home',
         routes: {
           '/home': (context) => HomeView(),
           '/loginView': (context) => LoginView(),

@@ -15,9 +15,11 @@ class SplashView extends StatefulWidget{
 }
 
 class _SplashView extends State<SplashView>{
+
+
   //DataHolder().perfil.uid  FirebaseAuth.instance.currentUser?.uid
   Future<bool> checkExistingProfile() async{
-    String? idUser=DataHolder().perfil.uid;
+    String? idUser=FirebaseAuth.instance.currentUser?.uid;
     FirebaseFirestore db=FirebaseFirestore.instance;
     final docRef=db.collection("perfiles").doc(idUser);
     DocumentSnapshot docsnap=await docRef.get();
