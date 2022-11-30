@@ -21,10 +21,13 @@ class RFButton extends StatelessWidget{
         },
         child: Container(
           decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
             image: DecorationImage(
+              scale: 5,
               image: AssetImage('assets/images/dragon.png'),
               fit: BoxFit.cover,
             ),
+            color: Colors.grey,
           ),
         )
     );
