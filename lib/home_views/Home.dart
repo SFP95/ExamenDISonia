@@ -74,7 +74,7 @@ class _HomeView extends State<HomeView> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.grey,
-          title: Text('Wikki Dragons',
+          title: Text('Wiki Dragons',
           style: TextStyle(
             fontSize:25,
           ),
