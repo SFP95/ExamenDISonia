@@ -26,14 +26,20 @@ class RFButton extends StatelessWidget{
           height: 80,
           width:70,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(70),
+            borderRadius: BorderRadius.circular(50),
             image: DecorationImage(
               image:AssetImage('assets/images/dragon.png'),
               fit: BoxFit.cover,
             ),
             color: Colors.white,
           ),
-          child: Padding(padding: const EdgeInsets.all(10),),
+          child:Text('BACK',
+          style: TextStyle(
+            height: 5,
+            fontSize: 20,
+            color: Colors.indigo[400],
+          ),
+          )// Padding(padding: const EdgeInsets.all(10),),
         )
     );
 
