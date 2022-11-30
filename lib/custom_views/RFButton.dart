@@ -23,8 +23,8 @@ class RFButton extends StatelessWidget{
           Navigator.of(context).popAndPushNamed('/home');
         },
         child: Container(
-          height: 80,
-          width:70,
+          height: 50,
+          width:50,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50),
             image: DecorationImage(
@@ -33,15 +33,15 @@ class RFButton extends StatelessWidget{
             ),
             color: Colors.white,
           ),
-          child:Text('BACK',
+          /*child:Text('MENU',
           style: TextStyle(
             height: 5,
             fontSize: 20,
             color: Colors.indigo[400],
-          ),
+          ),*/
           )// Padding(padding: const EdgeInsets.all(10),),
-        )
-    );
+        );
+  //  );
 
   }
   

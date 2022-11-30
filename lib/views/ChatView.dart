@@ -14,7 +14,7 @@ class ChatView extends StatelessWidget{
         ),*/
         body: Center(
             child: Container(
-              margin: const EdgeInsets.only(top: 50, bottom: 30,right: 15,left: 15),
+              margin: const EdgeInsets.only(top: 50, bottom: 25,right: 15,left: 15),
               decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
@@ -30,9 +30,36 @@ class ChatView extends StatelessWidget{
                         ]
                     )
                 ),
-
                 child:Center(
-                  child: RFButton(),
+                  child: Column(
+                    children: [
+                      Divider(
+                        height: 20,
+                        thickness: 3,
+
+                      ),
+                      Image(image: AssetImage('assets/images/egg.png'),
+                        height: 60,
+                        color: Colors.indigo[300]),
+                      Divider(
+                        height: 30,
+                        thickness: 3,
+                        color: Colors.pink[200],
+                      ),
+                      Text('DATOS DE LA PAGINA'),
+                      Divider(
+                        height: 20,
+                        thickness: 3,
+                        color: Colors.pink[200],
+                      ),
+                      Text('Back Home',
+                      style: TextStyle(
+                        height: 2,
+                        color: Colors.indigo[400]
+                      ),),
+                      RFButton(),
+                    ],
+                  ),
                 ),
 
             ),
