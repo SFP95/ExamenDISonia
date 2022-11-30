@@ -74,7 +74,11 @@ class _HomeView extends State<HomeView> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.grey,
-          title: Text('HOME'),
+          title: Text('Wikki Dragons',
+          style: TextStyle(
+            fontSize:25,
+          ),
+          ),
         ),
         body:
             Center(
@@ -111,6 +115,17 @@ class _HomeView extends State<HomeView> {
               ),
             )
             ),
+      floatingActionButton:  FloatingActionButton(
+        backgroundColor: Colors.white70,
+        child:Text('+',style: TextStyle(
+          color: Colors.grey,
+          fontSize: 30
+        ),
+        ),
+        onPressed: () {
+
+        },
+      ),
         );
   }
 
