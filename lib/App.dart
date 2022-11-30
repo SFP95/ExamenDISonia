@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
-import 'package:untitled/views/ChatView.dart';
+import 'package:untitled/views/CustomView.dart';
 import 'package:untitled/views/LoginView.dart';
 import 'package:untitled/home_views/OnBoardingView.dart';
 import 'package:untitled/views/RegisterView.dart';
