@@ -34,19 +34,24 @@ class ChatView extends StatelessWidget{
                   child: Column(
                     children: [
                       Divider(
-                        height: 20,
-                        thickness: 3,
-
+                        height: 15,
+                        indent: 800,
                       ),
-                      Image(image: AssetImage('assets/images/egg.png'),
-                        height: 60,
-                        color: Colors.indigo[300]),
+                      Image(image: AssetImage('assets/images/ArtDragons.png'),
+                        height: 220,
+                      ),
                       Divider(
                         height: 30,
                         thickness: 3,
                         color: Colors.pink[200],
                       ),
-                      Text('DATOS DE LA PAGINA'),
+                      Text('Es un ser mitológico que aparece de diversas formas en varias culturas de todo el mundo, con diferentes simbolismos asociados.\n\n'+
+                          'Hay dos tradiciones principales sobre dragones: los dragones europeos, derivados de las tradiciones populares europeas y de la'+
+                          'mitología de Grecia y Oriente Próximo, y los dragones orientales, de origen chino, coreano, japonés, vietnamita y de otros países ' +
+                          'de Extremo Oriente. Las dos tradiciones china y japonesa surgieron probablemente de forma independiente, pero en su desarrollo se han influido mutuamente.\n\n'+
+                          'La palabra aparece también en la tradición cristiana: el Apocalipsis se refiere a Satanás como el gran dragón, la serpiente antigua.\n\n'+
+                        'El dragón, uno de los más conocidos seres mitológicos, ha sido inspiración de diferentes relatos y poemas, algunos de los cuales han sido'+
+                          'llevados al cine. La primera aparición de los dragones fueron unos amuletos de jade de la cultura Hongshan, en China hace aproximadamente 6,700 y 4900 años. '),
                       Divider(
                         height: 20,
                         thickness: 3,

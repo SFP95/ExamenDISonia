@@ -66,6 +66,9 @@ class _HomeView extends State<HomeView> {
     DataHolder().selectedChatRoom=chatRooms[index];
     Navigator.of(context).pushNamed('/chatView');
   }
+  void subirNuevaCard(int index){
+    Navigator.of(context).popAndPushNamed('/nuevaCard');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -116,14 +119,14 @@ class _HomeView extends State<HomeView> {
             )
             ),
       floatingActionButton:  FloatingActionButton(
-        backgroundColor: Colors.white70,
+        backgroundColor: Colors.indigo[200],
         child:Text('+',style: TextStyle(
-          color: Colors.grey,
+          color: Colors.white,
           fontSize: 30
         ),
         ),
         onPressed: () {
-
+          subirNuevaCard;
         },
       ),
         );
