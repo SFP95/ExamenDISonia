@@ -16,19 +16,24 @@ class RFButton extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.white,
+        ),
         onPressed: (){
           Navigator.of(context).popAndPushNamed('/home');
         },
         child: Container(
+          height: 80,
+          width:70,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(70),
             image: DecorationImage(
-              scale: 5,
-              image: AssetImage('assets/images/dragon.png'),
+              image:AssetImage('assets/images/dragon.png'),
               fit: BoxFit.cover,
             ),
-            color: Colors.grey,
+            color: Colors.white,
           ),
+          child: Padding(padding: const EdgeInsets.all(10),),
         )
     );
 

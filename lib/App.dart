@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/singleton/DataHolder.dart';
+import 'package:untitled/views/ChatView.dart';
 import 'package:untitled/views/LoginView.dart';
 import 'package:untitled/home_views/OnBoardingView.dart';
 import 'package:untitled/views/RegisterView.dart';
@@ -30,7 +31,7 @@ class App extends StatelessWidget{
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/dragon.png"),
-        //  '/chatView': (context) => ChatView(),
+          '/chatView': (context) => ChatView(),
         },
       );
     }
@@ -43,7 +44,7 @@ class App extends StatelessWidget{
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/Nia_.png"),
-          //'/chatView': (context) => ChatView(),
+          '/chatView': (context) => ChatView(),
         },
       );
     }
