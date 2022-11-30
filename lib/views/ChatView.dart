@@ -7,14 +7,14 @@ class ChatView extends StatelessWidget{
   Widget build(BuildContext context) {
       return Scaffold(
         backgroundColor: Colors.grey,
-        appBar: AppBar(
+       /* appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.grey,
           title: Text('Dragon',style: TextStyle(color: Colors.white,fontSize: 20),),
-        ),
+        ),*/
         body: Center(
             child: Container(
-              margin: const EdgeInsets.only(top: 20, bottom: 80,right: 15,left: 15),
+              margin: const EdgeInsets.only(top: 50, bottom: 30,right: 15,left: 15),
               decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
@@ -31,7 +31,10 @@ class ChatView extends StatelessWidget{
                     )
                 ),
 
-                child: RFButton(),
+                child:Center(
+                  child: RFButton(),
+                ),
+
             ),
         ),
       );
