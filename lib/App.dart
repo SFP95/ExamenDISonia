@@ -7,7 +7,6 @@ import 'package:untitled/views/LoginView.dart';
 import 'package:untitled/home_views/OnBoardingView.dart';
 import 'package:untitled/views/RegisterView.dart';
 import 'package:untitled/views/SplashView.dart';
-
 import 'home_views/Home.dart';
 
 class App extends StatelessWidget{
@@ -31,7 +30,7 @@ class App extends StatelessWidget{
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/dragon.png"),
-          '/chatView': (context) => ChatView(),
+          '/chatView': (context) => CustomView(),
         },
       );
     }
@@ -44,7 +43,7 @@ class App extends StatelessWidget{
           '/registerView': (context) => RegisterView(),
           '/onBoarding': (context) => OnBoardingView(),
           '/splashView': (context) => SplashView("assets/images/Nia_.png"),
-          '/chatView': (context) => ChatView(),
+          '/chatView': (context) => CustomView(),
         },
       );
     }

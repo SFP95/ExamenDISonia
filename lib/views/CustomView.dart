@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/custom_views/RFButton.dart';
 
-class ChatView extends StatelessWidget{
+class CustomView extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
       return Scaffold(
